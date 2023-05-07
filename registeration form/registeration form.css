@@ -1,0 +1,134 @@
+body {
+	background-color: #000000;
+	font-family: 'Open Sans', sans-serif;
+	color: #f7f7f7;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	/* min-height: 100vh; */
+	/* margin: 0; */
+}
+
+.container {
+	background-color: black;
+	border-radius: 14px;
+	overflow: hidden;
+	width: 400px;
+	max-width: 100%;
+}
+.container:hover{
+    background: black;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4,0 0 100px#03e9f4;
+}
+
+.header {
+	border-bottom: 1px solid #f0f0f0;
+	background-color: #000000;
+	padding: 20px 40px;
+}
+
+.header h2 {
+	font-size: 30px;
+    text-align: center;
+    font-weight:60;
+    color: #1dfdea;
+    margin:10px 0 20px 0;
+}
+
+.form {
+	padding: 30px 40px;	
+}
+
+.form-control {
+	margin-bottom: 10px;
+	padding-bottom: 20px;
+	position: relative;
+}
+
+.form-control label {
+	display: inline-block;
+	margin-bottom: 5px;
+}
+
+.form-control input {
+	border: 2px solid white;
+	border-radius: 4px;
+	display: block;
+	font-family: inherit;
+	font-size: 14px;
+	padding: 10px;
+	width: 100%;
+}
+
+.form-control input:focus {
+	outline: 0;
+	border-color: rgba(255, 248, 248, 0.445);
+}
+
+.form-control.success input {
+	border-color: hsl(113, 63%, 49%);
+}
+
+.form-control.error input {
+	border-color: #e74c3c;
+}
+
+.form-control i {
+	visibility: hidden;
+	position: absolute;
+	top: 40px;
+	right: 10px;
+}
+
+.form-control.success i.fa-check-circle {
+	color: #2ecc71;
+	visibility: visible;
+}
+
+.form-control.error i.fa-exclamation-circle {
+	color: #e74c3c;
+	visibility: visible;
+}
+
+.form-control small {
+	color: #e74c3c;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	visibility: hidden;
+}
+
+.form-control.error small {
+	visibility: visible;
+}
+
+.form button {
+	position: relative;
+    top:100%;
+	margin-left: 100px;
+	margin-right: 100px;
+    right: 10%;
+    width: 150px;
+    height: 50px;
+    background-color:black;
+    color:#03e9f4;
+    border: 10px;
+    font-size: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+	box-sizing: border-box;
+	border-radius: 10px;
+	text-align: center;
+}
+.button:hover{
+    background: #03e9f4;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow:  0 0 5px #03e9f4,0 0 5px #03e9f4, 0 5px #03e9f4,0 0 5px #03e9f4;
+	box-shadow:#03e9f4;
+	transition: linear;
+	transform: scale(0.9);
+
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="registeration form.css">
+    <title>Document</title>
+</head>
+<body>
+        <div class="container">
+            <div class="header">
+                <h2><center> Register here </center></h2>
+            </div>
+            <form id="form" class="form" action="/form.php" onsubmit="return validateForm()" method="post">
+                <div class="form-control">
+                    <label for="username">Username</label>
+                    <input type="text" placeholder="Username01" id="username" />
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error message</small>
+                </div>
+                <div class="form-control">
+                    <label for="username">Email</label>
+                    <input type="email" placeholder="example01@portfolioNest.org" id="email" />
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error message</small>
+                </div>
+                <div class="form-control">
+                    <label for="username">Gender</label>
+                    <input type="radio" name="gender" value="Male"><label>Male</label>
+                    <input type="radio" name="gender" value="female"><label>Female</label>
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error message</small>
+                </div>
+                <div class="form-control">
+                    <label for="username">Birth</label>
+                    <input type="date" id="date"/>
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error message</small>
+                </div>
+                <div class="form-control">
+                    City
+                    <input type="text" placeholder="Where do you live?" id="city" >
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error message</small>
+                </div>
+                <div class="form-control">
+                    <label for="username">Phone Number</label>
+                    <input type="tel" name="username" placeholder="Enter your phone number" pattern="[0-9]{10}" id="phone"/>
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error message</small>
+                </div>
+                <div class="form-control">
+                    <label for="username">What do you want to become</label>
+                    <input type="text" placeholder="What you want to become?" id="goal" >
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error message</small>
+                </div>
+                <div class="form-control">
+                    <label for="interest">interest</label>                    
+                    <input type="text" placeholder="What's your interest?" id="interest" >
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error message</small>
+                </div>
+                <div class="form-control">
+                <label for="skill">Skill</label>
+                <input type="text" placeholder="Enter your skills" id="skill" />
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+                </div>
+                <div class="form-control">
+                <label for="Cirtificate">Cirtificate</label>
+                <input type="text" placeholder="Enter your Cirtifications id" id="cirtificate" />
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+                </div>
+                <div class="form-control">
+                    <label for="username">Password</label>
+                    <input type="password" placeholder="Password" id="password"/>
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error message</small>
+                </div>
+                <div class="form-control">
+                    <label for="username">Password check</label>
+                    <input type="password" placeholder="Password " id="password2"/>
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error message</small>
+                </div>
+                <div class="button">
+                    <button><center>Submit</center></button>
+                </div>
+            </form>
+        </div>
+</body>
+<script src="registeration form.js"></script>
+</html>
