@@ -23,10 +23,12 @@ resume is a crucial instrument for building your profile. It gives the user advi
 potential future scopes.
 
 
-# Website Link:- https://animex007.github.io/portfolionest.github.io/
+## Website Link:-
+https://animex007.github.io/portfolionest.github.io/
 
 
-# Figma Design Link:- https://www.figma.com/proto/PtfJVCQGx7kV1DM9zFaLW4/Wireframing-in-Figma?page-id=0%3A1&node-id=0%3A1&viewport=379%2C64%2C0.05&scaling=scale-down&starting-point-node-id=122%3A275&show-proto-sidebar=1
+## Figma Design Link:- 
+https://www.figma.com/proto/PtfJVCQGx7kV1DM9zFaLW4/Wireframing-in-Figma?page-id=0%3A1&node-id=0%3A1&viewport=379%2C64%2C0.05&scaling=scale-down&starting-point-node-id=122%3A275&show-proto-sidebar=1
 
 
 
