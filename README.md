@@ -40,3 +40,12 @@ https://www.figma.com/proto/PtfJVCQGx7kV1DM9zFaLW4/Wireframing-in-Figma?page-id=
 
 ![Screenshot 2024-01-15 130146](https://github.com/rohansnishad/portfolionest_beta-ver--/assets/98040172/7c45c8eb-c865-4d31-b35d-9c61023f377c)
 
+
+
+# Team Portfolionest 
+1 Ayush Jagdhane
+2 Rohan Nishad
+3 Bhavesh Sukare 
+4 Anjali Ranglani
+5 Prachi Bangre
+6 Suraj Hemnani
