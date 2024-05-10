@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" ></script>
+	<!-- Bootstrap theme -->
+	<!-- <link rel="stylesheet" href="registration.css"> -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <title>portfolionest</title>
+  <link rel="stylesheet" href="style.css">
+   <!-- Font Awesome Cdn Link -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+   <link rel="stylesheet" href="login.css">
+</head>
+<body>
+  <div class="wrapper">
+    <h1>Hello Again!</h1>
+    <p>Welcome back <br></p>
+    <form>
+      <input type="text" name="email" id="email" class="form-control" placeholder="Enter username">
+      <input type="password" name="password" id="password" class="form-control"  placeholder="Password">
+      <p class="recover">
+        <a href="#">Recover Password</a>
+      </p>
+    <closeform></closeform></form>
+    <br>
+    
+    <button type="button" id="register" name="register" class="btn btn-success">Sign in</button>
+    <p class="or">
+        <br>
+       
+      ----- or continue with -----
+    </p>
+    <div class="icons">
+      <i class="fab fa-google"></i>
+      <i class="fab fa-github"></i>
+      <i class="fab fa-facebook"></i>
+    </div>
+    <div class="not-member">
+      Not a member? <a href="registration.html">Register Now</a>
+    </div>
+  </div>
+</body>
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js";
+import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-analytics.js";
+import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-auth.js";
+ // TODO: Add SDKs for Firebase products that you want to use
+ // https://firebase.google.com/docs/web/setup#available-libraries
+
+ // Your web app's Firebase configuration
+ // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+ const firebaseConfig = {
+   apiKey: "AIzaSyAx_ISuK_3itvzem12u0Y5DhKHH6gvvhqM",
+   authDomain: "login-and-sinup-1e67a.firebaseapp.com",
+   projectId: "login-and-sinup-1e67a",
+   storageBucket: "login-and-sinup-1e67a.appspot.com",
+   messagingSenderId: "635881668659",
+   appId: "1:635881668659:web:81b536c26254ba41df6346",
+   measurementId: "G-BTC81QX0ZQ"
+ };
+
+ // Initialize Firebase
+ const app = initializeApp(firebaseConfig);
+ const analytics = getAnalytics(app);
+ const auth = getAuth(app);
+ console.log(app);
+
+   
+
+   //----- New Registration code start	  
+   document.getElementById("register").addEventListener("click", function() {
+     var email =  document.getElementById("email").value;
+     var password = document.getElementById("password").value;
+     //For new registration
+     createUserWithEmailAndPassword(auth, email, password)
+     .then((userCredential) => {
+       // Signed in 
+       const user = userCredential.user;
+       console.log(user);
+       alert("Registration successfully!!");
+       // ...
+     })
+     .catch((error) => {
+       const errorCode = error.code;
+       const errorMessage = error.message;
+       // ..
+       console.log(errorMessage);
+       alert(error);
+     });		  		  
+   });
+   //----- End
+
+   //----- Login code start	  
+   document.getElementById("login").addEventListener("click", function() {
+     var email =  document.getElementById("login_email").value;
+     var password = document.getElementById("login_password").value;
+
+     signInWithEmailAndPassword(auth, email, password)
+     .then((userCredential) => {
+       // Signed in 
+       const user = userCredential.user;
+       console.log(user);
+       alert(user.email+" Login successfully!!!");
+       document.getElementById('logout').style.display = 'block';
+       // ...
+     })
+     .catch((error) => {
+       const errorCode = error.code;
+       const errorMessage = error.message;
+       console.log(errorMessage);
+       alert(errorMessage);
+     });		  		  
+   });
+   //----- End
+
+   //----- Logout code start	  
+   document.getElementById("logout").addEventListener("click", function() {
+     signOut(auth).then(() => {
+       // Sign-out successful.
+       console.log('Sign-out successful.');
+       alert('Sign-out successful.');
+       document.getElementById('logout').style.display = 'none';
+     }).catch((error) => {
+       // An error happened.
+       console.log('An error happened.');
+     });		  		  
+   });
+   //----- End
+
+ </script>
+</html>
